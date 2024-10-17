@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap">
+
+</head>
+
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        {{#if error}}
+            <p class="error">{{error}}</p>
+        {{/if}}
+        <form action="/login" method="POST">
+            <!-- Your form elements -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <a href="#"><center>Forgot password?</center></a><br>
+        <a href="/signup">Don't have an existing account? Create a new one</a>
+    </div>
+</body>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    background-image: url("https://img.freepik.com/premium-photo/interior-has-white-sofa-empty-white-wall-background-generative-ai_786587-6582.jpg?size=626&ext=jpg&ga=GA1.1.1350528554.1699091817&semt=ais");
+    background-attachment: scroll; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.login-container {
+    border-radius: 40px;
+    width: 250px;
+    padding: 20px;
+    margin: 50px auto;
+    background-color:lightgrey;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+h1 {
+    font-family: 'Lobster Two', cursive;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    border-radius: 100px;
+    margin-bottom: 5px;
+}
+
+input {
+    border-radius: 100px;
+    margin-bottom: 20px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    
+    border-radius: 100px;
+    background-color:black;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+a {
+    border-radius: 100px;
+    color:rgb(0, 221, 255)72, 72, 158);
+    text-decoration:red;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
+
+</html>

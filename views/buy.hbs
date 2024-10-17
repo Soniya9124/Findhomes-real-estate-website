@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houses for Sale</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap">
+
+    <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+
+            setTimeout(showSlides, 2000); // Change slide every 2 seconds (adjust as needed)
+        }
+
+        // Initialize the slideshow when the page loads
+        showSlides();
+    </script>
+</head>
+<body>
+
+  <header>
+    <h1>Houses for Sale</h1><br>
+  </header>
+
+  <main>
+    <div class="house">
+      <div class="slideshow-container">
+        <img class="mySlides" src="https://imgs.nestimg.com/2_bhk_independent_house_in_thavarekere_for_rent_bangalore_the_reference_number_is_6644086_5640009693386542306.jpg" alt="pic 1">
+        <img class="mySlides" src="https://pics.nuroa.com/4_bhk_villa_in_kannamangala_for_rent_bangalore_the_reference_number_is_12844129_1240016695472429436.jpg" alt="pic 2">
+        <img class="mySlides" src="https://pics.nuroa.com/3_bhk_villa_in_yelahanka_for_rent_bangalore_the_reference_number_is_12892840_3010014696077150361.jpg" alt="pic 2">
+      </div><br>
+
+      <div class="text"><h2><u>2-BHK, 3-floored building</u></h2><br>
+      <p>Address:7th block, Koramangala, Bengaluru </p><br>
+      <p>No. of floors: 3 </p><br>
+      <p>Description: Two 2-BHK houses(1st and 2nd floors) and One 1-BHK house(GND floor) </p><br>
+      <p>Dimensions: 1200 sq. ft. (30x40) </p><br>
+      <p>Price:2.1 Cr</p><br>
+      <button type="button">Contact the Owner</button></a><br></div>
+    </div>
+
+    <div class="house">
+      <div class="slideshow-container">
+        <img class="mySlides" src="https://3.imimg.com/data3/NV/ME/MY-3729022/img_4177-500x500.jpg" alt="pic 1">
+        <img class="mySlides" src="https://res.cloudinary.com/stanza-living/image/upload/f_auto,q_auto,w_600/e_improve/e_sharpen:10/e_saturation:10/f_auto,q_auto/v1648117693/Website/CMS-Uploads/ekj8wj5emms9atjhknnz.jpg" alt="pic 2">
+        <img class="mySlides" src="https://images.nobroker.in/images/ff80818169855a8b016985cc1e4f5435/ff80818169855a8b016985cc1e4f5435_297622_861890_medium.jpg" alt="pic 3">
+        <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKWns7dThwQJZ-Ot8f7Y8L0DxHZHBv9VqWTfWUBZjJIh3M6FeoSnJU7zThs-fJXU48eNI&usqp=CAU" alt="pic 4">
+      </div><br>
+
+      <div class="text"><h3><u>3-BHK, Duplex</u></h3><br>
+      <p>Address: Vidyaranyapuram,Bengaluru </p><br>
+      <p>No. of floors: 2 (GND,1st floor) </p><br>
+      <p>Description: Duplex house with terrace, 3-BHK </p><br>
+      <p>Dimensions: 2400 sq. ft. (60x40) </p><br>
+      <p>Price:3 Cr</p><br>
+      <button type="button">Contact the Owner</button></a><br></div>
+    </div>
+
+    <div class="house">
+      <div class="slideshow-container">
+        <img class="mySlides" src="https://ppc-realestate.com/wp-content/uploads/2023/02/WhatsApp-Image-2023-02-16-at-10.54.40-AM-1.jpeg" alt="pic 1">
+        <img class="mySlides" src="https://ab487509f8decc2c0cd2-9ff2a6143bff296f88e68c3257991f4b.ssl.cf6.rackcdn.com/9549610baa5390b85.webp" alt="pic 2">
+        <img class="mySlides" src="https://nestaway-houses.s3.ap-southeast-1.amazonaws.com/uploads/images/thumb_large_a85fd06a-c91d-4d98-90a8-482ff4cc854c.jpg" alt="pic 3">
+      </div><br>
+
+      <div class="text"><h4><u>2-BHK, 2-floored building</u></h4><br>
+      <p>Address:4th phase, Yelahanka New Town,Bengaluru </p><br>
+      <p>No. of floors: 2 (GND & first)(not duplex) </p><br>
+      <p>Description: 2-BHK house in GND floor and  One 1-BHK house(1st floor) </p><br>
+      <p>Dimensions: 1200 sq. ft. (20x60) </p><br>
+      <p>Price:95 L </p><br>
+      <button type="button">Contact the Owner</button></a><br></div>
+    </div>
+
+  </main>
+
+</body>
+</html>
+
+
+<style>
+    body {
+    background-attachment:scroll; 
+    background-color: rgb(147, 214, 233);
+    background-repeat:repeat;
+    background-position: center;
+    background-image: url("https://img.freepik.com/premium-photo/minimalist-empty-room-with-white-wall-wooden-floor-indoor-green-plants-3d-rendering_308721-509.jpg?w=1060");
+    background-attachment: scroll;
+    background-size:cover;
+    margin-left: 175px;
+    margin-left: 175px;
+}
+
+h1{
+    font-family: 'Lobster Two', cursive;
+    font-size:60px;
+    margin-left: 450px;
+    margin-left: 450px;
+}
+
+h2{
+   font-family: 'Lobster Two', cursive;
+   text-align: center;
+   margin-left: -120px;
+   font-size:30px;
+}
+
+h3{
+   font-family: 'Lobster Two', cursive;
+   text-align: center;
+   margin-left: -120px;
+   font-size:30px;
+}
+
+h4{
+   font-family: 'Lobster Two', cursive;
+   text-align: center;
+   margin-left: -120px;
+   font-size:30px;
+}
+button {
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    font-size:15px;
+    position:bottom right;
+    border-radius: 200px;
+    background-color:black;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.slideshow-container{
+    display: flex;
+    height:250px;
+    padding-inline: 70px;
+}
+
+.text{
+    padding-inline: 400px;
+    font-size:17px;
+}
+
+
+</style>
+</html>
